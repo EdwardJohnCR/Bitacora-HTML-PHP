@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 </html>";
 
-    // Establecer la codificación del archivo HTML
+    // Escribir el contenido en el archivo HTML
     file_put_contents($filename, $content);
 
     // Redirigir al archivo HTML generado
