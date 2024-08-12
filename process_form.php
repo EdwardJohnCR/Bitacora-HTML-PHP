@@ -1,10 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recoger los datos del formulario
-    $officerName = htmlspecialchars($_POST['officerName']);
-    $shift = htmlspecialchars($_POST['shift']);
-    $site = htmlspecialchars($_POST['site']);
-    $incidentReport = htmlspecialchars($_POST['incidentReport']);
+    $officerName = htmlspecialchars($_POST['officerName'], ENT_QUOTES, 'UTF-8');
+    $shift = htmlspecialchars($_POST['shift'], ENT_QUOTES, 'UTF-8');
+    $site = htmlspecialchars($_POST['site'], ENT_QUOTES, 'UTF-8');
+    $incidentReport = htmlspecialchars($_POST['incidentReport'], ENT_QUOTES, 'UTF-8');
     $confirmSubmission = isset($_POST['confirmSubmission']);
 
     // Validar que el usuario ha confirmado el envío
@@ -58,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 </html>";
 
+    // Establecer la codificación del archivo HTML
     file_put_contents($filename, $content);
 
     // Redirigir al archivo HTML generado
