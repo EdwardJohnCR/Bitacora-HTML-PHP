@@ -32,14 +32,31 @@
         .alert {
             margin-top: 20px;
         }
+        .logo {
+            width: 100px; /* Ajusta el tamaño del logo según lo desees */
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px; /* Espacio entre el logo y el título */
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header-title {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2 class="mt-4">Bitácora de Seguridad</h2>
+        <div class="header-container">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <h2 class="header-title">Bitácora TTS</h2>
+        </div>
         <form action="process_form.php" method="POST">
             <div class="mb-3">
-                <label for="officerName" class="form-label">Nombre del Oficial</label>
+                <label for="officerName" class="form-label">Oficial en Turno</label>
                 <input type="text" class="form-control" id="officerName" name="officerName" required>
             </div>
             <div class="mb-3 row">
