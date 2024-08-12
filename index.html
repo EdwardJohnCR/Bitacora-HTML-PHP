@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora de Seguridad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2c3e50; /* Fondo más oscuro */
+            color: #ecf0f1; /* Color de texto claro para contraste */
+        }
+        .container {
+            max-width: 600px; /* Ancho máximo del formulario */
+            margin: 50px auto; /* Centrar el formulario y agregar márgenes */
+            padding: 20px;
+            background-color: #34495e; /* Fondo de la tarjeta más oscuro */
+            border-radius: 8px;
+        }
+        .form-select, .form-control {
+            background-color: #3b4b5c; /* Color de fondo del input */
+            color: #ecf0f1; /* Color de texto en el input */
+        }
+        .btn-primary {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+        .btn-primary:hover {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-4">Bitácora de Seguridad</h2>
+        <form action="process_form.php" method="POST">
+            <div class="mb-3">
+                <label for="officerName" class="form-label">Nombre del Oficial</label>
+                <input type="text" class="form-control" id="officerName" name="officerName" required>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="shift" class="form-label">Turno</label>
+                    <select class="form-select" id="shift" name="shift" required>
+                        <option value="Dia">Día</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noche">Noche</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="site" class="form-label">Sitio</label>
+                    <select class="form-select" id="site" name="site" required>
+                        <option value="Central">Central</option>
+                        <option value="Charlie 1">Charlie 1</option>
+                        <option value="Sierra">Sierra</option>
+                        <option value="Tango 2">Tango 2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="incidentReport" class="form-label">Reporte de Incidentes</label>
+                <textarea class="form-control" id="incidentReport" name="incidentReport" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="confirmSubmission" id="confirmSubmission" required>
+                    <label class="form-check-label" for="confirmSubmission">Confirmar envío</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Bitácora</button>
+        </form>
+    </div>
+</body>
+</html>
