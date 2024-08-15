@@ -36,7 +36,7 @@ Aquí tienes el Paso 2 del README con la especificación exacta de dónde cambia
   * Reemplace 'destino@correo.com' con la dirección de correo electrónico que recibirá las bitácoras.
 * Configuración de SMTP:
 
-  * Configure el servidor SMTP en el archivo process_form.php:
+* Configure el servidor SMTP en el archivo process_form.php:
   * ini_set('SMTP', 'smtp.suservidor.com');
   * ini_set('smtp_port', '465');
   * ini_set('sendmail_from', 'from@correo.com');
