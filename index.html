@@ -33,18 +33,17 @@
             margin-top: 20px;
         }
         .logo {
-            width: 130px; /* Ajusta el tamaño del logo según lo desees */
+            width: 130px;
             height: auto;
             vertical-align: middle;
-            margin-right: 10px; /* Espacio entre el logo y el título */
+            margin-right: 10px;
         }
         .header-container {
             display: flex;
             align-items: center;
-            justify-content: center; /* Centra el contenido horizontalmente */
+            justify-content: center;
             margin-bottom: 20px;
         }
-        
         .header-title {
             margin: 0;
         }
@@ -56,7 +55,8 @@
             <h2 class="header-title">Bitácora TTS</h2>
             <img src="image/logoSmall.png" alt="Logo" class="logo">
         </div>
-        <form action="confirmation.html" method="POST">
+        <!-- El formulario ahora apunta al script PHP que enviará el correo -->
+        <form action="process_form.php" method="POST">
             <div class="mb-3">
                 <label for="officerName" class="form-label">Oficial en Turno</label>
                 <input type="text" class="form-control" id="officerName" name="officerName" required>
