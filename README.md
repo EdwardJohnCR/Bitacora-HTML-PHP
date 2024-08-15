@@ -12,7 +12,6 @@ El repositorio contiene los siguientes archivos:
 ##Instrucciones de Instalación y Configuración
 ## Paso 1: Clonar el Repositorio
 ```bash
-Copiar código
 git clone https://github.com/usuario/repo-bitacora-seguridad.git
 cd repo-bitacora-seguridad
 ```
