@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Configurar los detalles del correo
-    $to = 'edwardjohncr@gmail.com';
+    $to = 'correo@correo.com';
     $subject = 'Bitácora de Seguridad';
     $message = "
     <html>
@@ -41,14 +41,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Cabeceras para enviar un correo en formato HTML
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: Bitácora TTS <bitacora@ttscr.com>" . "\r\n";
+    $headers .= "From: Bitácora TTS <from@correo.com>" . "\r\n";
 
     // Configuración de servidor SMTP de Hostinger
     ini_set('SMTP', 'smtp.hostinger.com');
     ini_set('smtp_port', '465');
-    ini_set('sendmail_from', 'bitacora@ttscr.com');
-    ini_set('username', 'bitacora@ttscr.com');
-    ini_set('password', 'Logtoptier2024$');  // Reemplaza 'your_smtp_password' con tu contraseña SMTP
+    ini_set('sendmail_from', 'from@correo.com');
+    ini_set('username', 'user@correo.com');
+    ini_set('password', 'password');  // Reemplaza 'your_smtp_password' con tu contraseña SMTP
 
     // Enviar el correo
     if (mail($to, $subject, $message, $headers)) {
