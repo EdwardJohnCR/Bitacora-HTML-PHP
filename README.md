@@ -1,6 +1,6 @@
 ## Formulario de Bitácora de Seguridad
 ### Descripción
-Este proyecto consiste en un formulario web para la bitácora de seguridad de TTS. El formulario permite a los oficiales de seguridad registrar detalles de sus turnos y reportar incidentes. Los datos son enviados por correo electrónico a un destinatario especificado.
+Este proyecto consiste en un formulario web para la bitácora de seguridad. El formulario permite a los oficiales de seguridad registrar detalles de sus turnos y reportar incidentes. Los datos son enviados por correo electrónico a un destinatario especificado.
 
 ## Contenidos del Repositorio
 El repositorio contiene los siguientes archivos:
